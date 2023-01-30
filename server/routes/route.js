@@ -1,11 +1,14 @@
 import express from "express";
 
-import { addTodo } from "../controller/todo-controller.js";
+
+
+import { addTodo, toggleTodoDone, getAllTodos } from "../controller/todo-controller.js";
 
 const route = express.Router();
 
-route.post("/todos", addTodo)
-
+route.post("/todos", addTodo);
+route.get("/todos", getAllTodos);
+route.get("/todos/:id", toggleTodoDone)
 
 
 export default route;
