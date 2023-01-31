@@ -7,8 +7,8 @@ header {
 }
 header h1 {
   font-size: 100px;
-  color: red;
-  font-weight: 200;
+  color: #2c3e50;
+  font-weight: 400;
 }
 
 input {
@@ -45,4 +45,20 @@ article {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #ffff;
+}
+.button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #6c6777;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.button.selected {
+  color: #fff;
+  background-color: #6c6777;
 }
