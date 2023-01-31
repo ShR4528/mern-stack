@@ -1,8 +1,4 @@
 import express, { Router } from "express";
-
-
-
-
 import { addTodo, toggleTodoDone, getAllTodos, updateTodo, deleteTodo } from "../controller/todo-controller.js";
 
 const route = express.Router();

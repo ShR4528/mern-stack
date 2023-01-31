@@ -56,5 +56,5 @@ export const deleteTodo = (id) => async (dispatch) => {
 }
 
 export const toggleTab = (tab) => async (dispatch) => {
-    dispatch({ type: TOGGLE_TAB, filter: tab })
+    dispatch({ type: TOGGLE_TAB, selected: tab })
 }
