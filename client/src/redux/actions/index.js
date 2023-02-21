@@ -1,5 +1,6 @@
-import axios from "axios";
 import { ADDNEW_TODO, GETALL_TODO, TOGGLE_TODO, TOGGLE_TAB, UPDATE_TODO, DELETE_TODO } from "./type";
+
+import axios from "axios";
 
 const API_URL = "http://localhost:8000";
 

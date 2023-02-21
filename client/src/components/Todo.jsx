@@ -18,7 +18,7 @@ const Todo = ({ todo }) => {
   return (
     <li
       className="task"
-      onClick={() => dispatch(toggleTodo(todo._id))}
+      onClick={() => dispatch(toggleTodo(todo?._id))}
       style={{
         textDecoration: todo?.done ? "line-through" : "",
         color: todo?.done ? "#bdc3c7" : "#34495e",
@@ -36,7 +36,7 @@ const Todo = ({ todo }) => {
           onChange={(e) => setText(e.target.value)}
         />
       </form>
-      <span className="icon" onClick={() => dispatch(deleteTodo(todo._id))}>
+      <span className="icon" onClick={() => dispatch(deleteTodo(todo?._id))}>
         <i className="fas fa-trash" />
       </span>
       <span
